@@ -1,11 +1,17 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
 
 .container {
+  resize: both;
   text-align: center;
   height: 100%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
+  grid-template-rows: repeat(2, 1fr) repeat(1, 5fr) repeat(1, 1fr);
   padding: 16px;
   box-sizing: border-box;
 }
