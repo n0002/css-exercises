@@ -40,13 +40,11 @@
   margin-top: 20px;
 }
 
-.menu {}
-
 .sidebar {
   background-color: #FF7755;
   grid-area: 2 / 1 / 5 / 1;
   display: grid;
-  grid-template-rows: repeat(4, 200px);
+  grid-template-rows: repeat(4, 1fr);
   gap: min(100px, 5%);
 }
 
@@ -71,9 +69,16 @@
   grid-area: 2 / 2 / 2 / 2;
 }
 
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
